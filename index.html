@@ -43,7 +43,7 @@
                 <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm align-self-center ">
+                <div class="col-12 col-sm-3 align-self-center ">
                     <a type="button" class="btn btn-block btn-lg btn-warning" href="#reservetable">Reserve Table</a>
                 </div>
             </div>
@@ -103,41 +103,42 @@
     </div>
     <div class="row row-content" id="reservetable">
         <div class="col-sm-3"></div>
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-lg-6">
             <div class="card">
                 <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                 <div class="card-body">
-                    <dl class="row">
-                        <dt class="col-12 col-sm-3">Number Of Guests</dt>
-                        <dd class="col-9 mt-3 mb-4">
-                            <form>
-                                <input type="radio">
-                                <label for="1"> 1 </label>
-                                <input type="radio">
-                                <label for="2"> 2 </label>
-                                <input type="radio">
-                                <label for="3"> 3 </label>
-                                <input type="radio">
-                                <label for="4"> 4 </label>
-                                <input type="radio">
-                                <label for="5"> 5 </label>
-                                <input type="radio">
-                                <label for="6"> 6 </label>
-                            </form>
-                        </dd>
-                        <dt class="col-12 col-sm-3">Date and Time</dt>
-                        <dd class="col-9">
-                            <form class="input-group">
-                                <input type="text" placeholder="Date" class="col-12 col-sm-5">
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                <input type="text" placeholder="Time" class="col-12 col-sm-5">
-                            </form>
-                        </dd>
-                        <dt class="col-12 col-sm-3"></dt>
-                        <dd class="btn-group col-9" role="group">
-                            <a role="button" class="btn btn-primary" href="#"></i> Reserve</a>
-                        </dd>
-                    </dl>
+                    <form role="form">
+                        <div class="form-group row">
+                            <label class="col-sm-2 control-label">Number of Guests</label>
+                            <div class="radio col-sm-10">
+                                <label class="radio-inline"><input name="guests" type="radio" value=""> 1 </label>
+                                <label class="radio-inline"><input name="guests" type="radio" value=""> 2 </label>
+                                <label class="radio-inline"><input name="guests" type="radio" value=""> 3 </label>
+                                <label class="radio-inline"><input name="guests" type="radio" value=""> 4 </label>
+                                <label class="radio-inline"><input name="guests" type="radio" value=""> 5 </label>
+                                <label class="radio-inline"><input name="guests" type="radio" value=""> 6 </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="date" class="col-sm-2 control-label">Date and Time</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="date" placeholder="Date">
+
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="time" placeholder="Time">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm">
+                                <a class="btn btn-primary" type="submit" href="#">Reserve</a>
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
